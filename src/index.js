@@ -7,3 +7,7 @@ ReactDOM.render(
   routeConfig,
   document.getElementById('root')
 );
+
+if (module.hot) {
+  module.hot.accept()
+}
