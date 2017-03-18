@@ -1,6 +1,5 @@
-import { createStore, combineReducers } from 'redux';
-import { routerReducer } from 'react-router-redux'
-
+import { routerReducer } from 'react-router-redux';
+import { combineReducers } from 'redux';
 
 // The User Reducer
 const userReducer = function(state = {}, action) {
@@ -17,9 +16,6 @@ const reducers = combineReducers({
   userState: userReducer,
   widgetState: widgetReducer,
   routing: routerReducer
-
 });
 
-const store = createStore(reducers);
-
-export default store;
+export default reducers
