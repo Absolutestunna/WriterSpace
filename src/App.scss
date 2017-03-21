@@ -1,5 +1,12 @@
+body {
+  font-family: 'Roboto', sans-serif;
+}
  .App {
   // text-align: center;
-  padding: 2% 9%;
+  // padding: 0 9%;
   border: 1px solid red;
+}
+
+.search-form-wrapper {
+  margin: 0 12%;
 }

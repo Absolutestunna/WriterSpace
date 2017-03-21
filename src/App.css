@@ -1,3 +1,8 @@
+body {
+  font-family: 'Roboto', sans-serif; }
+
 .App {
-  padding: 2% 9%;
   border: 1px solid red; }
+
+.search-form-wrapper {
+  margin: 0 12%; }
