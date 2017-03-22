@@ -10,16 +10,20 @@ nav {
 
 .nav {
   box-shadow: none; }
-
-.top-nav {
-  padding: 0 2%;
-  border-bottom: 0.2px solid #dddddd; }
-  .top-nav .brand-logo {
-    color: #404040;
-    font-size: 1.4rem; }
-  .top-nav li > a,
-  .top-nav .right-nav-elements li > a {
-    color: rgba(0, 0, 0, 0.44); }
-
-.sub-nav {
-  border-bottom: 0.2px solid #dddddd; }
+  .nav .top-nav {
+    padding: 0 2%;
+    border-bottom: 0.2px solid #dddddd; }
+    .nav .top-nav .brand-logo {
+      color: #404040;
+      font-size: 1.4rem; }
+    .nav .top-nav li > a,
+    .nav .top-nav .right-nav-elements li > a {
+      color: rgba(0, 0, 0, 0.44); }
+  .nav .sub-nav {
+    border-bottom: 0.2px solid #dddddd; }
+    .nav .sub-nav .tabs-nav > li > a {
+      color: rgba(0, 0, 0, 0.44); }
+    .nav .sub-nav .tabs-nav > li > a.active {
+      color: #ee6e73; }
+  .nav .sign-in {
+    color: #00AB6B; }
