@@ -59,6 +59,31 @@ nav {
 .card-story .story-metadata .story-date {
   font-size: 12px; }
 
+.card-story .story-content .story-title {
+  letter-spacing: -.028em;
+  line-height: 1.04;
+  font-size: 29px;
+  margin: 0;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.8); }
+
+.card-story .story-content .story-sub-title {
+  font-size: 23px;
+  margin-top: 0.2em;
+  line-height: 1.22;
+  letter-spacing: -.022em;
+  color: rgba(0, 0, 0, 0.44);
+  font-weight: 300; }
+
+.card-story .story-snippet {
+  margin-bottom: 1.6em; }
+
+.card-story .article-readMore a {
+  color: rgba(0, 0, 0, 0.44); }
+
+.card-story .article-readMore a p {
+  font-size: 0.78em; }
+
 .link {
   cursor: pointer; }
 

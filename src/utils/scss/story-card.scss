@@ -24,6 +24,36 @@
 
   }
 
+  .story-content {
+    .story-title {
+      letter-spacing: -.028em;
+      line-height: 1.04;
+      font-size: 29px;
+      margin: 0;
+      font-weight: 400;
+      color: $title-black;
+    }
+    .story-sub-title {
+      font-size: 23px;
+      margin-top: 0.2em;
+      line-height: 1.22;
+      letter-spacing: -.022em;
+      color: $page-gray;
+      font-weight: 300
+    }
+  }
+  .story-snippet {
+    margin-bottom: 1.6em;
+  }
+
+  .article-readMore a {
+    color: $page-gray;
+  }
+
+  .article-readMore a p {
+    font-size: 0.78em;
+  }
+
 }
 
 .link {
