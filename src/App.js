@@ -7,9 +7,12 @@ class App extends Component {
     return (
         <div className="App container">
           <NavBar />
-          {this.props.children}
+          <div className="row body">
+            <div className="col s12 m8 push-m2">
+              {this.props.children}
+            </div>
+          </div>
         </div>
-
     );
   }
 }
