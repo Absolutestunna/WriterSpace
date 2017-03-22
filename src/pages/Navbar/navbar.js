@@ -67,11 +67,10 @@ const SubNav = ({
     <div className="row sub-nav">
       <div className="col s12">
         <ul className="tabs tabs-nav">
-          <li className="tab col s3"><a>Top Stories</a></li>
           <li className="tab col s3"><a>{`Editor's Pick`}</a></li>
           <li className="tab col s3"><a className="active">Sports</a></li>
           <li className="tab col s3"><a>Life</a></li>
-          <li className="tab col s3"><a>Songs</a></li>
+          <li className="tab col s3"><a>Music</a></li>
         </ul>
       </div>
     </div>
@@ -91,7 +90,7 @@ const CompleteNavComp = ({
         <li className="sign-in"
           onClick={handleSignIn}>
           {toggleNameAndSign ? (
-              <a className="waves-effect waves-teal btn-flat">Sign In/Sign Up</a>
+              <h5 style={{fontSize: '1rem', margin: '1.6rem 0 .656rem 0'}}>Sign In/Sign Up</h5>
                 ): (
               <a className="waves-effect waves-teal btn-flat">Welcome, Joshua</a>
 
