@@ -38,8 +38,8 @@ class NavBar extends React.Component {
   render () {
     const renderedNav = this.handleRenderNavFunc();
     return (
-      <nav className="top-nav">
-        <div className="nav-wrapper">
+      <nav className="nav">
+        <div className="nav-wrapper top-nav">
           {renderedNav}
         </div>
         <SubNav />
@@ -50,16 +50,15 @@ class NavBar extends React.Component {
 
 const SubNav = () => {
   return (
-    <div className="row">
+    <div className="row sub-nav">
       <div className="col s12">
         <ul className="tabs">
-          <li className="tab col s3"><a href="#personal-stories">Your stories</a></li>
-          <li className="tab col s3"><a className="active" href="#sports">Sports</a></li>
-          <li className="tab col s3"><a href="#life">Life</a></li>
-          <li className="tab col s3"><a href="#songs">Songs</a></li>
+          <li className="tab col s3"><a>Your stories</a></li>
+          <li className="tab col s3"><a className="active">Sports</a></li>
+          <li className="tab col s3"><a>Life</a></li>
+          <li className="tab col s3"><a>Songs</a></li>
         </ul>
       </div>
-      
     </div>
   )
 }

@@ -5,18 +5,23 @@ nav {
   color: rgba(0, 0, 0, 0.44);
   background-color: #fff; }
 
-.top-nav {
-  box-shadow: none; }
-
 .card {
   margin: 0 0 1rem 0; }
 
-.nav-wrapper {
+.nav {
+  box-shadow: none; }
+
+.top-nav {
   padding: 0 2%;
-  border-bottom: .5px solid #dddddd; }
-  .nav-wrapper .brand-logo {
-    color: #404040;
-    font-size: 1.4rem; }
-  .nav-wrapper li > a,
-  .nav-wrapper .right-nav-elements li > a {
-    color: rgba(0, 0, 0, 0.44); }
+  border-bottom: 0.2px solid #dddddd; }
+
+.top-nav .brand-logo {
+  color: #404040;
+  font-size: 1.4rem; }
+
+.top-nav li > a,
+.top-nav .right-nav-elements li > a {
+  color: rgba(0, 0, 0, 0.44); }
+
+.sub-nav {
+  border-bottom: 0.2px solid #dddddd; }

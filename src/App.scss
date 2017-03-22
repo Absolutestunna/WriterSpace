@@ -1,7 +1,7 @@
 
-// @import "navbar"
 $page-gray: rgba(0,0,0,.44);
 $logo-gray: #404040;
+$sub-nav-gray: .2px solid #dddddd;
 
  .App {
   // border: 1px solid red;
@@ -13,25 +13,8 @@ nav {
   background-color: #fff;
 }
 
-.top-nav {
-  box-shadow: none;
-}
-
 .card {
   margin: 0 0 1rem 0;
 }
 
-.nav-wrapper {
-  padding: 0 2%;
-  // background-color: #FFF;
-  border-bottom: .5px solid #dddddd;
-  .brand-logo {
-    color: $logo-gray;
-    font-size: 1.4rem;
-  },
-  .right-nav-elements {
-    li > a {
-      color: $page-gray;
-    }
-  }
-}
+@import "./pages/Navbar/navbar.scss"

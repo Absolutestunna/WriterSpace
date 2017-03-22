@@ -1,0 +1,23 @@
+.nav {
+  box-shadow: none;
+
+}
+
+.top-nav {
+  padding: 0 2%;
+  // background-color: #FFF;
+  border-bottom: $sub-nav-gray;
+  .brand-logo {
+    color: $logo-gray;
+    font-size: 1.4rem;
+  },
+  .right-nav-elements {
+    li > a {
+      color: $page-gray;
+    }
+  }
+}
+
+.sub-nav {
+  border-bottom: $sub-nav-gray;
+}
