@@ -4,16 +4,24 @@ class NavBar extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      searchClicked: false
+      searchClicked: false,
+      toggleNameAndSign: true
     }
     this.handleShowSearchInput = this.handleShowSearchInput.bind(this);
     this.handleReturnToNavFunc = this.handleReturnToNavFunc.bind(this);
     this.handleRenderNavFunc = this.handleRenderNavFunc.bind(this);
+    this.handleSignIn = this.handleSignIn.bind(this);
   }
 
   handleShowSearchInput() {
     this.setState({
       searchClicked: !this.state.searchClicked
+    })
+  }
+
+  handleSignIn() {
+    this.setState({
+      toggleNameAndSign: !this.state.toggleNameAndSign
     })
   }
 
@@ -31,6 +39,8 @@ class NavBar extends React.Component {
           />) :
         (<CompleteNavComp
           handleShowSearchInput={this.handleShowSearchInput}
+          handleSignIn={this.handleSignIn}
+          toggleNameAndSign={this.state.toggleNameAndSign}
           />)
     return renderedNavComp
   }
@@ -42,18 +52,23 @@ class NavBar extends React.Component {
         <div className="nav-wrapper top-nav">
           {renderedNav}
         </div>
-        <SubNav />
+        <SubNav
+          toggleNameAndSign={this.state.toggleNameAndSign}
+        />
       </nav>
     )
   }
 }
 
-const SubNav = () => {
+const SubNav = ({
+  toggleNameAndSign
+}) => {
   return (
     <div className="row sub-nav">
       <div className="col s12">
-        <ul className="tabs">
-          <li className="tab col s3"><a>Your stories</a></li>
+        <ul className="tabs tabs-nav">
+          <li className="tab col s3"><a>Top Stories</a></li>
+          <li className="tab col s3"><a>{`Editor's Pick`}</a></li>
           <li className="tab col s3"><a className="active">Sports</a></li>
           <li className="tab col s3"><a>Life</a></li>
           <li className="tab col s3"><a>Songs</a></li>
@@ -64,14 +79,25 @@ const SubNav = () => {
 }
 
 const CompleteNavComp = ({
-  handleShowSearchInput
+  handleShowSearchInput,
+  handleSignIn,
+  toggleNameAndSign
 }) => {
   return (
     <div>
       <a href="#!" className="brand-logo"><i className="material-icons">speaker_notes</i>WriterSpace</a>
       <ul className="right hide-on-med-and-down right-nav-elements">
         <li onClick={handleShowSearchInput}><a><i className="material-icons">search</i></a></li>
-        <li><a href="mobile.html"><i className="material-icons">perm_identity</i></a></li>
+        <li className="sign-in"
+          onClick={handleSignIn}>
+          {toggleNameAndSign ? (
+              <a className="waves-effect waves-teal btn-flat">Sign In/Sign Up</a>
+                ): (
+              <a className="waves-effect waves-teal btn-flat">Welcome, Joshua</a>
+
+                )
+          }
+        </li>
       </ul>
     </div>
 

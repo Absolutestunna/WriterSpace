@@ -1,23 +1,38 @@
 .nav {
   box-shadow: none;
 
-}
-
-.top-nav {
-  padding: 0 2%;
-  // background-color: #FFF;
-  border-bottom: $sub-nav-gray;
-  .brand-logo {
-    color: $logo-gray;
-    font-size: 1.4rem;
-  },
-  .right-nav-elements {
-    li > a {
-      color: $page-gray;
+  .top-nav {
+    padding: 0 2%;
+    // background-color: #FFF;
+    border-bottom: $sub-nav-gray;
+    .brand-logo {
+      color: $logo-gray;
+      font-size: 1.4rem;
+    },
+    .right-nav-elements {
+      li > a {
+        color: $page-gray;
+      }
     }
   }
-}
 
-.sub-nav {
-  border-bottom: $sub-nav-gray;
+  .sub-nav {
+    border-bottom: $sub-nav-gray;
+
+    .tabs-nav > li > a {
+      color: $page-gray;
+    }
+
+    .tabs-nav > li > a.active{
+      color: #ee6e73;
+    }
+
+
+  }
+
+  .sign-in {
+    color: #00AB6B;
+  }
+
+
 }
