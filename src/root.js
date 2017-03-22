@@ -11,7 +11,7 @@ import App from './App';
 
 
 //children components
-import Foo from './Foo/Foo';
+import Sports from './pages/Sports/sports-container';
 
 
 //history instance
@@ -21,7 +21,7 @@ const routeConfig = (
   <Provider store={store}>
     <Router history={history}>
       <App>
-        <Route path="/foo" component={Foo}/>
+        <Route path="/sports" component={Sports} />
       </App>
     </Router>
   </Provider>
