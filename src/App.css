@@ -1,5 +1,8 @@
+.App {
+  margin-top: 10px; }
+
 nav {
-  color: black;
+  color: rgba(0, 0, 0, 0.44);
   background-color: #fff; }
 
 .top-nav {
@@ -13,8 +16,9 @@ nav {
   border-bottom: .5px solid #dddddd; }
 
 .nav-wrapper .brand-logo {
-  color: black; }
+  color: #404040;
+  font-size: 1.4rem; }
 
 .nav-wrapper li > a,
 .nav-wrapper .right-nav-elements li > a {
-  color: black; }
+  color: rgba(0, 0, 0, 0.44); }

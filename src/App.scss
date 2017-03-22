@@ -1,12 +1,15 @@
 
 // @import "navbar"
+$page-gray: rgba(0,0,0,.44);
+$logo-gray: #404040;
 
  .App {
   // border: 1px solid red;
+  margin-top: 10px;
 }
 
 nav {
-  color: black;
+  color: $page-gray;
   background-color: #fff;
 }
 
@@ -23,11 +26,12 @@ nav {
   // background-color: #FFF;
   border-bottom: .5px solid #dddddd;
   .brand-logo {
-    color: black;
+    color: $logo-gray;
+    font-size: 1.4rem;
   },
   .right-nav-elements {
     li > a {
-      color: black
+      color: $page-gray;
     }
   }
 }

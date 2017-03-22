@@ -42,23 +42,26 @@ class NavBar extends React.Component {
         <div className="nav-wrapper">
           {renderedNav}
         </div>
-        <div className="row">
-            <div className="col s12">
-              <ul className="tabs">
-                <li className="tab col s3"><a href="#personal-stories">Your stories</a></li>
-                <li className="tab col s3"><a className="active" href="#sports">Sports</a></li>
-                <li className="tab col s3"><a href="#life">Life</a></li>
-                <li className="tab col s3"><a href="#songs">Songs</a></li>
-              </ul>
-            </div>
-            <div id="personal-stories" className="col s12">Your stories</div>
-            <div id="sports" className="col s12">Sports</div>
-            <div id="life" className="col s12">Life</div>
-            <div id="songs" className="col s12">Songs</div>
-          </div>
+        <SubNav />
       </nav>
     )
   }
+}
+
+const SubNav = () => {
+  return (
+    <div className="row">
+      <div className="col s12">
+        <ul className="tabs">
+          <li className="tab col s3"><a href="#personal-stories">Your stories</a></li>
+          <li className="tab col s3"><a className="active" href="#sports">Sports</a></li>
+          <li className="tab col s3"><a href="#life">Life</a></li>
+          <li className="tab col s3"><a href="#songs">Songs</a></li>
+        </ul>
+      </div>
+      
+    </div>
+  )
 }
 
 const CompleteNavComp = ({
