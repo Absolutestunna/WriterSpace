@@ -1,8 +1,20 @@
-body {
-  font-family: 'Roboto', sans-serif; }
+nav {
+  color: black;
+  background-color: #fff; }
 
-.App {
-  border: 1px solid red; }
+.top-nav {
+  box-shadow: none; }
 
-.search-form-wrapper {
-  margin: 0 12%; }
+.card {
+  margin: 0 0 1rem 0; }
+
+.nav-wrapper {
+  padding: 0 2%;
+  border-bottom: .5px solid #dddddd; }
+
+.nav-wrapper .brand-logo {
+  color: black; }
+
+.nav-wrapper li > a,
+.nav-wrapper .right-nav-elements li > a {
+  color: black; }

@@ -8,68 +8,96 @@ class NavBar extends React.Component {
     }
     this.handleShowSearchInput = this.handleShowSearchInput.bind(this);
     this.handleReturnToNavFunc = this.handleReturnToNavFunc.bind(this);
+    this.handleRenderNavFunc = this.handleRenderNavFunc.bind(this);
   }
+
   handleShowSearchInput() {
     this.setState({
       searchClicked: !this.state.searchClicked
     })
   }
+
   handleReturnToNavFunc() {
-    console.log('somethings');
     this.setState({
       searchClicked: !this.state.searchClicked
     })
   }
-  render () {
+
+  handleRenderNavFunc() {
     let { searchClicked } = this.state;
-    const renderedNav = searchClicked ?
-        (<SearchInput
+    const renderedNavComp = searchClicked ?
+        (<SearchInputComp
           handleReturnToNavFunc={this.handleReturnToNavFunc}
           />) :
-        (<NavStuff
+        (<CompleteNavComp
           handleShowSearchInput={this.handleShowSearchInput}
           />)
+    return renderedNavComp
+  }
+
+  render () {
+    const renderedNav = this.handleRenderNavFunc();
     return (
-      <nav>
+      <nav className="top-nav">
         <div className="nav-wrapper">
           {renderedNav}
         </div>
+        <div className="row">
+            <div className="col s12">
+              <ul className="tabs">
+                <li className="tab col s3"><a href="#personal-stories">Your stories</a></li>
+                <li className="tab col s3"><a className="active" href="#sports">Sports</a></li>
+                <li className="tab col s3"><a href="#life">Life</a></li>
+                <li className="tab col s3"><a href="#songs">Songs</a></li>
+              </ul>
+            </div>
+            <div id="personal-stories" className="col s12">Your stories</div>
+            <div id="sports" className="col s12">Sports</div>
+            <div id="life" className="col s12">Life</div>
+            <div id="songs" className="col s12">Songs</div>
+          </div>
       </nav>
     )
   }
 }
 
-const NavStuff = ({
+const CompleteNavComp = ({
   handleShowSearchInput
 }) => {
   return (
     <div>
-      <a href="#!" className="brand-logo"><i className="material-icons">cloud</i>Logo</a>
-      <ul className="right hide-on-med-and-down">
+      <a href="#!" className="brand-logo"><i className="material-icons">speaker_notes</i>WriterSpace</a>
+      <ul className="right hide-on-med-and-down right-nav-elements">
         <li onClick={handleShowSearchInput}><a><i className="material-icons">search</i></a></li>
-        <li><a href="badges.html"><i className="material-icons">view_module</i></a></li>
-        <li><a href="collapsible.html"><i className="material-icons">refresh</i></a></li>
-        <li><a href="mobile.html"><i className="material-icons">more_vert</i></a></li>
+        <li><a href="mobile.html"><i className="material-icons">perm_identity</i></a></li>
       </ul>
     </div>
 
   )
 }
 
-const SearchInput = ({
+const SearchInputComp = ({
   handleReturnToNavFunc
 }) => {
   return (
     <form className="search-form-wrapper">
       <div className="input-field">
-        <input id="search" type="search" required autoFocus />
-        <label className="label-icon" for="search"><i className="material-icons">search</i></label>
+        <input id="search" type="search" required autoFocus placeholder="Search for stories"/>
+        <label className="label-icon" htmlFor="search"><i className="material-icons">search</i></label>
         <i
           className="material-icons"
           onClick={handleReturnToNavFunc}>close</i>
       </div>
     </form>
   )
+}
+
+NavBar.propTypes = {
+  handleShowSearchInput: PropTypes.func,
+  handleReturnToNavFunc: PropTypes.func,
+  handleRenderNavFunc: PropTypes.func,
+  searchClicked: PropTypes.string,
+  renderedNavComp: PropTypes.object,
 }
 
 export default NavBar;

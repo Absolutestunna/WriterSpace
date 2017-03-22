@@ -1,12 +1,33 @@
-body {
-  font-family: 'Roboto', sans-serif;
-}
+
+// @import "navbar"
+
  .App {
-  // text-align: center;
-  // padding: 0 9%;
-  border: 1px solid red;
+  // border: 1px solid red;
 }
 
-.search-form-wrapper {
-  margin: 0 12%;
+nav {
+  color: black;
+  background-color: #fff;
+}
+
+.top-nav {
+  box-shadow: none;
+}
+
+.card {
+  margin: 0 0 1rem 0;
+}
+
+.nav-wrapper {
+  padding: 0 2%;
+  // background-color: #FFF;
+  border-bottom: .5px solid #dddddd;
+  .brand-logo {
+    color: black;
+  },
+  .right-nav-elements {
+    li > a {
+      color: black
+    }
+  }
 }
