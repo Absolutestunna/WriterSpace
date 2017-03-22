@@ -37,3 +37,30 @@ nav {
 
 .nav .sign-in {
   color: #00AB6B; }
+
+.card-story {
+  height: 20rem;
+  margin-bottom: 1rem;
+  color: rgba(0, 0, 0, 0.8); }
+
+.card-story .story-metadata {
+  margin-bottom: 10px !important; }
+
+.card-story .story-metadata .profile-pic {
+  vertical-align: top;
+  border-radius: 100%;
+  height: 36px;
+  width: 36px; }
+
+.card-story .story-metadata .user_metadata {
+  display: inline-block;
+  margin-left: 10px !important; }
+
+.card-story .story-metadata .story-date {
+  font-size: 12px; }
+
+.link {
+  cursor: pointer; }
+
+.link-accent {
+  color: #00ab6b; }

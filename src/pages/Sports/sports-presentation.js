@@ -3,9 +3,11 @@ import React, { PropTypes } from 'react'
 
 
 
-const SportsPresenter = (props) => {
+const SportsPresenter = ({
+
+}) => {
   return (
-    <div>presenter</div>
+    <div />
   )
 }
 

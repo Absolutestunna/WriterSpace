@@ -3,6 +3,8 @@
 $page-gray: rgba(0,0,0,.44);
 $logo-gray: #404040;
 $sub-nav-gray: .2px solid #dddddd;
+$card-gray: rgba(0,0,0,.8);
+$page-green: #00ab6b;
 
  .App {
   margin-top: 10px;
@@ -23,3 +25,4 @@ nav {
 
 @import "./pages/Navbar/navbar.scss";
 @import "./pages/Sports/sports.scss";
+@import "./utils/scss/story-card.scss"
