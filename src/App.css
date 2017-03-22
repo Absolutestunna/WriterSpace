@@ -14,14 +14,12 @@ nav {
 .top-nav {
   padding: 0 2%;
   border-bottom: 0.2px solid #dddddd; }
-
-.top-nav .brand-logo {
-  color: #404040;
-  font-size: 1.4rem; }
-
-.top-nav li > a,
-.top-nav .right-nav-elements li > a {
-  color: rgba(0, 0, 0, 0.44); }
+  .top-nav .brand-logo {
+    color: #404040;
+    font-size: 1.4rem; }
+  .top-nav li > a,
+  .top-nav .right-nav-elements li > a {
+    color: rgba(0, 0, 0, 0.44); }
 
 .sub-nav {
   border-bottom: 0.2px solid #dddddd; }
