@@ -1,7 +1,6 @@
 import React from 'react';
 import { Provider } from 'react-redux';
-import { Router, Route } from 'react-router';
-import { createBrowserHistory } from 'history';
+import { Router, Route, browserHistory } from 'react-router';
 import store from './Redux/storeConfig';
 import { syncHistoryWithStore } from 'react-router-redux'
 
@@ -16,16 +15,17 @@ import MusicContainer from './pages/Music/music-container';
 
 
 //history instance
-const history = syncHistoryWithStore(createBrowserHistory(), store);
+const history = syncHistoryWithStore(browserHistory, store);
+
 
 const routeConfig = (
   <Provider store={store}>
     <Router history={history}>
-      <App>
+      <Route path="/" component={App}>
         <Route path="/sports" component={SportsContainer} />
         <Route path="/life" component={LifeContainer} />
         <Route path="/music" component={MusicContainer} />
-      </App>
+      </Route>
     </Router>
   </Provider>
 );

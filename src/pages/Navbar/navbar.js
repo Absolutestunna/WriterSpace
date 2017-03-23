@@ -16,6 +16,8 @@ class NavBar extends React.Component {
     this.handleRenderNavFunc = this.handleRenderNavFunc.bind(this);
     this.handleSignIn = this.handleSignIn.bind(this);
     this.handleShowSportStoriesFunc = this.handleShowSportStoriesFunc.bind(this);
+    this.handleShowLifeStoriesFunc = this.handleShowLifeStoriesFunc.bind(this);
+    this.handleShowMusicStoriesFunc = this.handleShowMusicStoriesFunc.bind(this);
   }
 
   handleShowSearchInput() {
@@ -51,12 +53,16 @@ class NavBar extends React.Component {
   }
 
   handleShowSportStoriesFunc() {
-    console.log('im here');
-    // <Link to='/sports' />
-    console.log('this', this);
-    let { history } = this.props;
-    console.log('history', history);
-    history.push('/sports')
+    let { router } = this.props;
+    router.push('/sports')
+  }
+  handleShowLifeStoriesFunc() {
+    let { router } = this.props;
+    router.push('/life')
+  }
+  handleShowMusicStoriesFunc() {
+    let { router } = this.props;
+    router.push('/music')
   }
 
   render () {
@@ -70,6 +76,8 @@ class NavBar extends React.Component {
         <SubNav
           toggleNameAndSign={toggleNameAndSign}
           handleShowSportStoriesFunc={this.handleShowSportStoriesFunc}
+          handleShowLifeStoriesFunc={this.handleShowLifeStoriesFunc}
+          handleShowMusicStoriesFunc={this.handleShowMusicStoriesFunc}
         />
       </nav>
     )
