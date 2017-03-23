@@ -36,7 +36,6 @@ export const StoryCard = ({
           <p>Read More..</p>
         </a>
       </div>
-
     </div>
   )
 }
