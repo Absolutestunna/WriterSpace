@@ -5,13 +5,14 @@ import { createBrowserHistory } from 'history';
 import store from './Redux/storeConfig';
 import { syncHistoryWithStore } from 'react-router-redux'
 
-
 //root url
 import App from './App';
 
 
 //children components
-import Sports from './pages/Sports/sports-container';
+import SportsContainer from './pages/Sports/sports-container';
+import LifeContainer from './pages/Life/life-container';
+import MusicContainer from './pages/Music/music-container';
 
 
 //history instance
@@ -21,7 +22,9 @@ const routeConfig = (
   <Provider store={store}>
     <Router history={history}>
       <App>
-        <Route path="/sports" component={Sports} />
+        <Route path="/sports" component={SportsContainer} />
+        <Route path="/life" component={LifeContainer} />
+        <Route path="/music" component={MusicContainer} />
       </App>
     </Router>
   </Provider>

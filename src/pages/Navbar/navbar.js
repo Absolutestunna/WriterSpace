@@ -2,21 +2,7 @@ import React, { PropTypes } from 'react'
 import SearchInputComp from './childComps/searchInput';
 import SubNav from './childComps/sub-nav';
 import CompleteNavComp from './childComps/complete-nav';
-import { connect } from 'react-redux';
-
-const mapStateToProps = (state, ownProps) => {
-  return {
-    state
-  }
-}
-
-const mapDispatchToProps = (dispatch, ownProps) => {
-  return dispatch
-}
-
-
-
-
+import { Link, withRouter } from 'react-router';
 
 class NavBar extends React.Component {
   constructor(props) {
@@ -66,6 +52,7 @@ class NavBar extends React.Component {
 
   handleShowSportStoriesFunc() {
     console.log('im here');
+    // <Link to='/sports' />
     console.log('this', this);
     let { history } = this.props;
     console.log('history', history);
@@ -99,4 +86,4 @@ NavBar.propTypes = {
 
 
 
-export default connect(null, null)(NavBar);
+export default withRouter(NavBar);
