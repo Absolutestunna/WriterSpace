@@ -9,7 +9,7 @@ class NavBar extends React.Component {
     super(props)
     this.state = {
       searchClicked: false,
-      toggleNameAndSign: true
+      toggleNameAndSign: true,
     }
     this.handleShowSearchInput = this.handleShowSearchInput.bind(this);
     this.handleReturnToNavFunc = this.handleReturnToNavFunc.bind(this);
@@ -67,7 +67,7 @@ class NavBar extends React.Component {
 
   render () {
     const renderedNav = this.handleRenderNavFunc();
-    let { toggleNameAndSign } = this.state;
+    let { toggleNameAndSign, showSubNav } = this.state;
     return (
       <nav className="nav">
         <div className="nav-wrapper top-nav">

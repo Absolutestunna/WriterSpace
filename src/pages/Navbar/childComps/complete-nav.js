@@ -10,6 +10,7 @@ const CompleteNavComp = ({
       <a href="#!" className="brand-logo"><i className="material-icons">speaker_notes</i>WriterSpace</a>
       <ul className="right hide-on-med-and-down right-nav-elements">
         <li onClick={handleShowSearchInput}><a><i className="material-icons">search</i></a></li>
+        <li className="story-write"><a>Write a Story</a></li>
         <li className="sign-in"
           onClick={handleSignIn}>
           { toggleNameAndSign ? (

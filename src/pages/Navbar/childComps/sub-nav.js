@@ -12,7 +12,7 @@ const SubNav = ({
     <div className="row sub-nav">
       <div className="col s12">
         <ul className="tabs tabs-nav">
-          <li className="tab col s3"><a className="active">{`Editor's Pick`}</a></li>
+          <li className="tab col s3"><a className="active">Home</a></li>
           <li className="tab col s3" onClick={handleShowSportStoriesFunc}><a>Sports</a></li>
           <li className="tab col s3" onClick={handleShowLifeStoriesFunc}><a>Life</a></li>
           <li className="tab col s3" onClick={handleShowMusicStoriesFunc}><a>Music</a></li>
@@ -22,4 +22,4 @@ const SubNav = ({
   )
 }
 
-export default withRouter(SubNav);
+export default SubNav;
