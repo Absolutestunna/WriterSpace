@@ -1,10 +1,11 @@
-
+$link-gray-hover: rgba(0,0,0,1);
 $page-gray: rgba(0,0,0,.44);
 $logo-gray: #404040;
 $sub-nav-gray: .2px solid #dddddd;
-$card-gray: rgba(0,0,0,.8);
+$page-black: rgba(0,0,0,.76);
 $page-green: #00ab6b;
-$title-black: rgba(0,0,0,.8);
+$title-black: rgba(0,0,0,.76);
+
 
  .App {
   margin-top: 10px;
@@ -25,4 +26,5 @@ nav {
 
 @import "./pages/Navbar/navbar.scss";
 @import "./pages/Sports/sports.scss";
+@import "./pages/FullStory/fullStory.scss";
 @import "./utils/scss/story-card.scss"

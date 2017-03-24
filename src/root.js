@@ -13,7 +13,7 @@ import Home from './pages/Home/home-container';
 import SportsContainer from './pages/Sports/sports-container';
 import LifeContainer from './pages/Life/life-container';
 import MusicContainer from './pages/Music/music-container';
-
+import FullStoryContainer from './pages/FullStory/fullStory-container';
 
 //history instance
 const history = syncHistoryWithStore(browserHistory, store);
@@ -27,6 +27,7 @@ const routeConfig = (
         <Route path="/sports" component={SportsContainer} />
         <Route path="/life" component={LifeContainer} />
         <Route path="/music" component={MusicContainer} />
+        <Route path="/story(/:title)" component={FullStoryContainer} />
       </Route>
     </Router>
   </Provider>

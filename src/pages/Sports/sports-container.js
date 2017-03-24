@@ -8,7 +8,9 @@ class SportsContainer extends Component {
     return (
       <div>
         <p>Sports</p>
-        <StoryCard />
+        <StoryCard
+          title={'I have a story that I want to tell you but nope Im not telling you.'}
+          />
         <StoryCard />
       </div>
     )

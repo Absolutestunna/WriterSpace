@@ -42,26 +42,22 @@ nav {
   margin-right: 1.2em;
   margin-left: .6em; }
 
+.full-story-sub-title {
+  color: rgba(0, 0, 0, 0.44);
+  margin-bottom: 22px; }
+
+.story-paragraphs p {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 21px;
+  line-height: 1.58;
+  letter-spacing: -.003em;
+  color: rgba(0, 0, 0, 0.76); }
+
 .card-story {
   height: 20rem;
   margin-bottom: 1rem;
-  color: rgba(0, 0, 0, 0.8); }
-
-.card-story .story-metadata {
-  margin-bottom: 10px !important; }
-
-.card-story .story-metadata .profile-pic {
-  vertical-align: top;
-  border-radius: 100%;
-  height: 36px;
-  width: 36px; }
-
-.card-story .story-metadata .user_metadata {
-  display: inline-block;
-  margin-left: 10px !important; }
-
-.card-story .story-metadata .story-date {
-  font-size: 12px; }
+  color: rgba(0, 0, 0, 0.76); }
 
 .card-story .story-content .story-title {
   letter-spacing: -.028em;
@@ -69,7 +65,7 @@ nav {
   font-size: 29px;
   margin: 0;
   font-weight: 400;
-  color: rgba(0, 0, 0, 0.8); }
+  color: rgba(0, 0, 0, 0.76); }
 
 .card-story .story-content .story-sub-title {
   font-size: 23px;
@@ -87,6 +83,26 @@ nav {
 
 .card-story .article-readMore a p {
   font-size: 0.78em; }
+
+.card-story .article-readMore a:hover {
+  font-weight: bold;
+  color: black; }
+
+.story-metadata {
+  margin-bottom: 10px !important; }
+
+.story-metadata .profile-pic {
+  vertical-align: top;
+  border-radius: 100%;
+  height: 36px;
+  width: 36px; }
+
+.story-metadata .user_metadata {
+  display: inline-block;
+  margin-left: 10px !important; }
+
+.story-metadata .story-date {
+  font-size: 12px; }
 
 .link {
   cursor: pointer; }
