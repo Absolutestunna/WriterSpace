@@ -18,6 +18,7 @@ class NavBar extends React.Component {
     this.handleShowSportStoriesFunc = this.handleShowSportStoriesFunc.bind(this);
     this.handleShowLifeStoriesFunc = this.handleShowLifeStoriesFunc.bind(this);
     this.handleShowMusicStoriesFunc = this.handleShowMusicStoriesFunc.bind(this);
+    this.writeStoryFunc=this.writeStoryFunc.bind(this);
   }
 
   handleShowSearchInput() {
@@ -65,6 +66,11 @@ class NavBar extends React.Component {
     router.push('/music')
   }
 
+  writeStoryFunc() {
+    let { router } = this.props;
+    router.push('/write')
+  }
+
   render () {
     const renderedNav = this.handleRenderNavFunc();
     let { toggleNameAndSign, showSubNav } = this.state;
@@ -78,6 +84,7 @@ class NavBar extends React.Component {
           handleShowSportStoriesFunc={this.handleShowSportStoriesFunc}
           handleShowLifeStoriesFunc={this.handleShowLifeStoriesFunc}
           handleShowMusicStoriesFunc={this.handleShowMusicStoriesFunc}
+          writeStoryFunc={this.writeStoryFunc}
         />
       </nav>
     )
@@ -87,6 +94,7 @@ class NavBar extends React.Component {
 NavBar.propTypes = {
   handleShowSearchInput: PropTypes.func,
   handleReturnToNavFunc: PropTypes.func,
+  writeStoryFunc: PropTypes.func,
   handleRenderNavFunc: PropTypes.func,
   searchClicked: PropTypes.string,
   renderedNavComp: PropTypes.object,

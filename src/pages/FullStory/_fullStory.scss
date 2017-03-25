@@ -1,0 +1,23 @@
+.full-story-title {
+  font-weight: 600;
+  font-family: 'Raleway', sans-serif;
+
+}
+
+.full-story-sub-title {
+  color: $page-gray;
+  margin-bottom: 22px;
+}
+
+.story-paragraphs {
+  p {
+    font-weight: 400;
+    font-style: normal;
+    font-size: 21px;
+    line-height: 1.58;
+    letter-spacing: -.003em;
+    color: $page-black;
+    margin-top: 29px;
+
+  }
+}

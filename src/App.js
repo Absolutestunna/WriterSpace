@@ -8,11 +8,11 @@ class App extends Component {
     return (
         <div className="App container">
           <NavBar />
-          <div className="row body">
-            <div className="col s12 m8 push-m2">
+          <section className="row body">
+            <div className="col s12 m10 push-m1 l8 push-l2">
               {this.props.children}
             </div>
-          </div>
+          </section>
         </div>
     );
   }
