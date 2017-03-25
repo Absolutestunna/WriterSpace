@@ -42,6 +42,10 @@ nav {
   margin-right: 1.2em;
   margin-left: .6em; }
 
+.full-story-title {
+  font-weight: 600;
+  font-family: 'Raleway', sans-serif; }
+
 .full-story-sub-title {
   color: rgba(0, 0, 0, 0.44);
   margin-bottom: 22px; }
@@ -52,10 +56,10 @@ nav {
   font-size: 21px;
   line-height: 1.58;
   letter-spacing: -.003em;
-  color: rgba(0, 0, 0, 0.76); }
+  color: rgba(0, 0, 0, 0.76);
+  margin-top: 29px; }
 
 .card-story {
-  height: 20rem;
   margin-bottom: 1rem;
   color: rgba(0, 0, 0, 0.76); }
 
@@ -63,7 +67,7 @@ nav {
   letter-spacing: -.028em;
   line-height: 1.04;
   font-size: 29px;
-  margin: 0;
+  margin-top: 0.7em;
   font-weight: 400;
   color: rgba(0, 0, 0, 0.76); }
 
