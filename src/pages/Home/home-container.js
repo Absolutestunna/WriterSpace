@@ -1,29 +1,27 @@
 import React from 'react'
 import { connect } from 'react-redux';
-import { getInvite } from './home-actions';
+import { getStories } from './home-actions';
 
 
 function mapStateToProps(state) {
   console.log('state', state);
-  const { invite } = state;
+  const { getStoriesReducer: { storiesList } } = state;
   return {
-    invite
+    storiesList
   };
 }
 
 function mapDispatchToProps(dispatch) {
   return {
-    onGetInvite: () => dispatch(getInvite()),
+    onGetStories: () => dispatch(getStories()),
   };
 }
-
-
 
 
 class HomeContainer extends React.Component {
   componentDidMount() {
     console.log('this.props', this.props);
-    this.props.onGetInvite();
+    this.props.onGetStories();
   }
 
   componentWillReceiveProps(props){

@@ -1,11 +1,11 @@
 import ActionTypes from './home-ActionTypes';
 
 
-export const inviteReducer = function(state = {}, action) {
+export const getStoriesReducer = function(state = {}, action) {
   switch(action.type) {
-    case ActionTypes.GetInviteFulfilled:
+    case ActionTypes.GetStoriesFulfilledAction:
       return Object.assign({}, state, {
-       invitationList: action.invite
+       storiesList: action.stories
      })
     default:
       return state;

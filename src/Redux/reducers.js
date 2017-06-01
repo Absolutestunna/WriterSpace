@@ -1,6 +1,6 @@
 import { routerReducer } from 'react-router-redux';
 import { combineReducers } from 'redux';
-import { inviteReducer } from './../pages/Home/home-reducer';
+import { getStoriesReducer } from './../pages/Home/home-reducer';
 
 // The User Reducer
 const userReducer = function(state = {}, action) {
@@ -17,7 +17,7 @@ const reducers = combineReducers({
   userState: userReducer,
   widgetState: widgetReducer,
   routing: routerReducer,
-  inviteReducer
+  getStoriesReducer
 });
 
 export default reducers

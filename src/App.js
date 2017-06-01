@@ -9,7 +9,7 @@ class App extends Component {
         <div className="App container">
           <NavBar />
           <section className="row body">
-            <div className="col s12 m10 push-m1 l8 push-l2">
+            <div className="col s12">
               {this.props.children}
             </div>
           </section>

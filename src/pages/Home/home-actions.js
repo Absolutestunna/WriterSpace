@@ -1,35 +1,35 @@
 import ActionTypes from '../Home/home-ActionTypes';
 import database from '../../database';
 
-export function getInvite() {
+export function getStories() {
   return dispatch => {
     // dispatch(getInviteRequestedAction());
     return database.ref('/').once('value', snap => {
-      const invite = snap.val();
-      dispatch(getInviteFulfilledAction(invite))
+      const stories = snap.val();
+      dispatch(getAllStories(stories))
     })
     .catch((error) => {
       console.log(error);
-      dispatch(getInviteRejectedAction());
+      dispatch(getAllStoriesRejectedAction());
     });
   }
 }
 
-// function getInviteRequestedAction() {
+// function getStoriesRequestedAction() {
 //   return {
-//     type: ActionTypes.GetInviteRequested
+//     type: ActionTypes.GetStoriesRequested
 //   };
 // }
 
-function getInviteRejectedAction() {
+function getAllStoriesRejectedAction() {
   return {
-    type: ActionTypes.GetInviteRejected
+    type: ActionTypes.GetStoriesRejectionAction
   }
 }
 
-function getInviteFulfilledAction(invite) {
+function getAllStories(stories) {
   return {
-    type: ActionTypes.GetInviteFulfilled,
-    invite
+    type: ActionTypes.GetStoriesFulfilledAction,
+    stories
   };
 }
