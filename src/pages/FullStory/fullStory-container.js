@@ -1,4 +1,4 @@
-import React, { PropTypes, Component } from 'react'
+import React, { Component } from 'react'
 import UserInfoMetaData from './../../utils/components/user-info';
 
 class FullStoryContainer extends Component {

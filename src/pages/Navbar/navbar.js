@@ -2,7 +2,7 @@ import React, { PropTypes } from 'react'
 import SearchInputComp from './childComps/searchInput';
 import SubNav from './childComps/sub-nav';
 import CompleteNavComp from './childComps/complete-nav';
-import { Link, withRouter } from 'react-router';
+import { withRouter } from 'react-router'; //Link
 
 class NavBar extends React.Component {
   constructor(props) {
@@ -73,7 +73,7 @@ class NavBar extends React.Component {
 
   render () {
     const renderedNav = this.handleRenderNavFunc();
-    let { toggleNameAndSign, showSubNav } = this.state;
+    let { toggleNameAndSign } = this.state;
     return (
       <nav className="nav">
         <div className="nav-wrapper top-nav">
