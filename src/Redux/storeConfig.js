@@ -10,12 +10,11 @@ import thunk from 'redux-thunk';
 import reducers from './reducers';
 
 
-
 const composeEnhancers = composeWithDevTools({
   name: 'WriterSpace DevTools', actionsBlacklist: ['REDUX_STORAGE_SAVE']
 });
 
-const middlewares = [thunk]
+const middlewares = [thunk];
 
 const store = createStore(
   reducers,

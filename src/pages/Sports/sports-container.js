@@ -1,5 +1,5 @@
-import React, { PropTypes, Component } from 'react'
-import SportsPresenter from './sports-presentation';
+import React, { Component } from 'react'
+// import SportsPresenter from './sports-presentation';
 import { StoryCard } from './../../utils/components/story-card';
 
 
@@ -11,14 +11,16 @@ class SportsContainer extends Component {
         <StoryCard
           title={'I have a story that I want to tell you but nope Im not telling you.'}
           />
-        <StoryCard />
+        <StoryCard
+          title={"Someone is in trouble"}
+          />
       </div>
     )
   }
 }
 
-SportsContainer.propTypes = {
-
-}
+// SportsContainer.propTypes = {
+//
+// }
 
 export default SportsContainer;

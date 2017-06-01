@@ -1,4 +1,4 @@
-import React, { PropTypes, Component } from 'react'
+import React, { Component } from 'react';
 import { StoryCard } from './../../utils/components/story-card';
 
 class LifeContainer extends Component {
