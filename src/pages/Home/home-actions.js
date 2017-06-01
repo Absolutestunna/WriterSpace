@@ -5,7 +5,6 @@ export function getInvite() {
   return dispatch => {
     // dispatch(getInviteRequestedAction());
     return database.ref('/').once('value', snap => {
-      console.log('SNAP', snap);
       const invite = snap.val();
       dispatch(getInviteFulfilledAction(invite))
     })
